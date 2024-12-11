@@ -1,0 +1,35 @@
+.qualification-section {
+  @media (min-width: 1400px) {
+    margin: 0 auto;
+    width: 1200px;
+  }
+
+  && { margin-bottom: 60px; }
+
+  .qualification-section-content {
+    padding: 0 20px 30px;
+
+    > *:not(:last-child) {
+      margin-top: 0;
+      margin-bottom: 45px;
+    }
+
+    > a {
+      display: block;
+    }
+  }
+
+  .qualification-group {
+    border-bottom: 1px dashed #000;
+    padding: 24px 0 24px 30px
+  }
+
+  .qualification-group:nth-child(odd) {
+    background-color: #F2F2F2;
+  }
+
+  .qualification-group-header {
+    font-size: 24px;
+  }
+
+}
