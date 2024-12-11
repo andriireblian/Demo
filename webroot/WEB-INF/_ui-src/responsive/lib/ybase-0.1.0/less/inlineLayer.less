@@ -1,0 +1,78 @@
+@cboxTitleHeight: 88px;
+@cboxTitleLineHeight: 24px;
+
+.modal__top {
+  padding-bottom: (@grid-gutter-width + 12);
+  margin-bottom: (@grid-gutter-width + 10);
+  border-bottom: 1px solid @border-color;
+}
+
+.modal__top .modal__top--label {
+  color: @text-color;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.modal__top .modal__top--text {
+  font-style: italic;
+}
+
+.modal__text--bold {
+  font-weight: bold;
+}
+
+.modal__bottom {
+  margin-bottom: (@grid-gutter-width * 2);
+  font-size: 15px;
+}
+
+.quote-discount__modal--label {
+  font-size: 15px;
+  font-weight: 600;
+  color: @text-color;
+  text-transform: capitalize;
+  vertical-align: middle;
+  display: table-cell;
+  height: 40px;
+}
+
+.quote-discount__modal--input {
+  margin-bottom: (@grid-gutter-width - 3);
+  width: 100%;
+
+  input[type=number] {
+    -moz-appearance:textfield;
+  }
+
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.quote-discount__modal--input__label {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 18px;
+  padding-right: (@grid-gutter-width / 2);
+  width: 25px;
+  text-align: right;
+}
+
+.quote-discount__modal--original__total {
+  font-size: 15px;
+  font-style: italic;
+  border-bottom: 1px solid @border-color;
+  color: @text-color;
+  padding-bottom: (@grid-gutter-width - 7);
+  margin-bottom: (@grid-gutter-width - 11);
+  margin-top: (@grid-gutter-width / 2);
+}
+
+.quote-discount__modal--new__total {
+  color: @text-color;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: (@grid-gutter-width + 27);
+}
