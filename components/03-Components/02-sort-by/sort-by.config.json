@@ -1,0 +1,26 @@
+{
+  "title": "Sort By",
+	"status": "ready",
+  "variants": [{
+      "name": "default",
+      "context": {
+        "label": "Sort By"
+      }
+    }, {
+      "name": "small",
+      "context": {
+        "label": "Show",
+        "select": {
+          "items": [
+            { "text": "10", "value": "10" },
+            { "text": "20", "value": "20" },
+            { "text": "50", "value": "50" }
+          ],
+          "defaultLabel": "20",
+          "skipNoneOption": false,
+          "id": ""
+        }
+      }
+    }
+  ]
+}

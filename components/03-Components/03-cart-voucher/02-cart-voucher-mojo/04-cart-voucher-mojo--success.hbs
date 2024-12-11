@@ -1,0 +1,32 @@
+<div class="c-cart-voucher toggle-block active">
+    <label for="js-voucher-code-text"
+           class="toggle-block-opener c-cart-voucher__label"
+           tabindex="0" data-toggle="collapse"
+           aria-expanded="true"
+           aria-controls="js-voucher-code-text" role="button">{{data.label}}</label>
+    <div class="toggle-block-area">
+        <form action="" class="js-track-applyvoucher">
+            <div class="c-cart-voucher__inputs">
+                <input id="js-voucher-code-text" class="js-voucher-code input c-cart-voucher__input" type="text"
+                       maxlength="100" aria-describedby="pwSuccess" />
+                <button type="submit" id="js-voucher-apply-btn" class="c-cart-voucher__btn" disabled>Apply</button>
+            </div>
+        </form>
+        <div class="js-voucher-validation-container help-block" id="pwSuccess" tabindex="0">
+            <span class="help-block__error"></span>
+            <span class="help-block__success">{{data.success}}</span>
+        </div>
+        <div id="js-applied-vouchers" class="c-cart-voucher__applied">
+            <div class="c-cart-voucher__item" id="voucher-code">
+                <form id="removeVoucherForm" class="c-cart-voucher__form-remove" action="">
+                    <div class="c-cart-voucher__form-remove__input">
+                        <input class="c-cart-voucher__form-remove__input" readonly="readonly" value="{{data.promoValue}}" />
+                    </div>
+                    <button class="js-release-voucher-remove-btn c-cart-voucher__form-remove__btn">Remove</button>
+                </form>
+            </div>
+            <div class="c-cart-voucher__promotion-desc" tabindex="0">{{data.description}}</div>
+        </div>
+    </div>
+</div>
+<span id="promo-removed-msg" data-label="Promo Code removed" class="screenreader" aria-live="assertive"></span>

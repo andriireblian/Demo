@@ -1,0 +1,15 @@
+{
+  "title": "Cart Voucher Component",
+	"status": "ready",
+	"tags": [ "hybris"],
+	"context": {
+		"componentClass": ".c-cart-voucher",
+		"data": {
+			"label": "Promo code",
+			"error": "Invalid or expired promo code",
+			"success": "Promo code applied",
+			"description": "$3 off your first 4 months",
+			"promoValue": "MOJO3OFF4MO"
+		}
+	}
+}

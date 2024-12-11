@@ -1,0 +1,21 @@
+<div class="c-cart-voucher toggle-block">
+    <label for="js-voucher-code-text"
+           class="toggle-block-opener c-cart-voucher__label"
+           tabindex="0" data-toggle="collapse"
+           aria-expanded="false"
+           aria-controls="js-voucher-code-text" role="button">{{ data.label }}</label>
+    <div class="toggle-block-area">
+        <form action="" class="js-track-applyvoucher">
+            <div class="c-cart-voucher__inputs">
+                <input id="js-voucher-code-text" class="js-voucher-code input c-cart-voucher__input" type="text" maxlength="100" />
+                <button type="submit" id="js-voucher-apply-btn" class="c-cart-voucher__btn" disabled="disabled">Apply</button>
+            </div>
+        </form>
+        <div class="js-voucher-validation-container help-block" tabindex="0">
+            <span class="help-block__error"></span>
+            <span class="help-block__success"></span>
+        </div>
+        <div id="js-applied-vouchers" class="c-cart-voucher__applied"></div>
+    </div>
+</div>
+<span id="promo-removed-msg" data-label="Promo Code removed" class="screenreader" aria-live="assertive"></span>

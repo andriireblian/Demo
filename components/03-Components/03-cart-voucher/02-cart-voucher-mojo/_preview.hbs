@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="{{ path '/js/jquery-3.6.0.min.js' }}"></script>
+        <link media="all" rel="stylesheet" href="{{ path '/css/theme-mojo.css' }}">
+        <link media="all" rel="stylesheet" href="{{ path '/css/components.css' }}">
+        <title>Tabs Component</title>
+    </head>
+    <style>
+        @media all and (min-width: 1025px) {
+            .wrapper {
+                background: #FEFEFE;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 8px;
+                width: 470px;
+                margin: 30px auto 0;
+                padding: 30px;
+            }
+        }
+    </style>
+    <body data-themename="theme-mojo">
+        <div class="wrapper">
+            {{{ yield }}}
+        </div>
+        <script src="{{ path '/components/raw/cart-voucher-mojo/cart-voucher.js' }}"></script>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+{
+	"title": "Test Button",
+	"status": "ready",
+	"tags": [ "hybris"],
+	"context": {
+    "themes": ["master", "learner", "mojo"],
+    "componentClass": ".c-testbutton"
+  }
+}
