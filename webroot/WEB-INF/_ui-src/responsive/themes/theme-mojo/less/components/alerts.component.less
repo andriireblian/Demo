@@ -1,0 +1,123 @@
+/* ###############################################################################################
+   ###############################################################################################
+
+   Name: Alerts
+*/
+/*  $Alerts
+================================================== */
+
+// ########################################################################################
+// Default base class ( Must be used )
+.c-alert {
+  border: 0;
+  line-height: 1.625;
+  padding: 15px 0;
+
+  p { margin: 0; }
+}
+
+// Close button
+.c-alert__close {
+  position: absolute;
+  right: 20px;
+  transform: translate( 0, -50% ) rotate( 45deg );
+  height: 26px;
+  width: 28px;
+  opacity: 1;
+  background: transparent url( "../assets/icons/ic_expand.svg" ) center center no-repeat;
+  padding: 0;
+  text-indent: -99990px;
+
+  // Banner
+  .c-alert--banner & { top: 14px; }
+  // Inline
+  .c-alert--inline & { top: 12px; }
+}
+
+// Alert Content Wrapper
+.c-alert__content {
+  // Content wrapper ( general styles )
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  // Icon placement
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 18px;
+    display: inline-block;
+    background-position: 20px center;
+    background-repeat: no-repeat;
+    vertical-align: sub;
+    background-size: 18px 18px;
+  }
+
+  // Banner top position
+  .c-alert--banner &::before { top: 4px; }
+  // Inline top position
+  .c-alert--inline &::before {
+    top: 2px;
+    background-position: 15px center;
+    background-size: 16px 16px;
+  }
+
+  // Icons
+  .c-alert--info &::before { background-image: url( "../assets/icons/icon__info--pearson-blue.svg" ); }
+  .c-alert--error &::before { background-image: url( "../assets/icons/ic_alert.svg" ); }
+  .c-alert--alert &::before { background-image: url( "../assets/icons/ic_exclamation.svg" ); }
+  .c-alert--success &::before { background-image: url( "../assets/icons/ic_checkmark-circle.svg" ); }
+
+  // Banner wrapper padding
+  .c-alert--banner & { padding: 0 60px 0 50px; }
+  // Inline wrapper padding
+  .c-alert--inline & { padding: 0 15px 0 40px; }
+}
+
+
+// ########################################################################################
+// Variations per type
+
+// Banner
+.c-alert--banner {
+  background-color: @color--ice-blue;
+
+  p { color: @color--grey-text; }
+}
+
+// Inline
+.c-alert--inline {
+  border: 1px solid @color--grey-75;
+  border-left-width: 4px;
+  background-color: @color--white;
+  font-size: @typesize-minor;
+  padding: 10px 0;
+
+  p {
+    font-size: @typesize-minor;
+    color: @color--grey-text; // #333333
+    line-height: @leading--1-5;
+  }
+
+  .c-alert__close {
+    display: none;
+  }
+
+  &.c-alert--error {
+    border-left-color: @color--strawberry-red;
+  }
+
+  &.c-alert--alert {
+    border-left-color: @color--midnight-blue;
+  }
+
+  &.c-alert--success {
+    border-left-color: @color--grass-green;
+  }
+
+  &.c-alert--info {
+    border-left-color: @color--pearson-blue-nav;
+  }
+}

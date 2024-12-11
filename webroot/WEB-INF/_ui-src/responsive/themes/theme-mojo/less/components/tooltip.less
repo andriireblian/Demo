@@ -1,0 +1,60 @@
+.c-tooltip {
+  display: inline-block;
+
+  &__text {
+    display: none;
+    width: 290px;
+    background: @color--white-background;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 1px solid @color--grey-light;
+    color: @color--grey-text;
+    font-weight: @typeweight--default;
+    font-size: @typesize-minor;
+    line-height: @leading--1-5;
+    padding: 10px 15px;
+    z-index: 10;
+    @media (max-width: @tablet) {
+      width: 220px;
+    }
+
+    &[x-placement^='top'] > .c-tooltip__arrow {
+      bottom: -5px;
+      transform: rotate(-135deg);
+    }
+
+    &[x-placement^='bottom'] > .c-tooltip__arrow {
+      top: -5px;
+      transform: rotate(45deg);
+    }
+
+    &[x-placement^='left'] > .c-tooltip__arrow {
+      right: -5px;
+      transform: rotate(-45deg);
+    }
+
+    &[x-placement^='right'] > .c-tooltip__arrow {
+      left: -5px;
+      transform: rotate(135deg);
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background: inherit;
+    border-left: 1px solid @color--grey-light;
+    border-top: 1px solid @color--grey-light;
+  }
+
+  &__icon {
+    margin-left: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+
+    &[aria-expanded="true"] ~ .c-tooltip__text[role="tooltip"] {
+      display: block;
+    }
+  }
+}

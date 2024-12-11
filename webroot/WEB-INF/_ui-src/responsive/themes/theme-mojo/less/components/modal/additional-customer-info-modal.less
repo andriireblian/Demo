@@ -1,0 +1,29 @@
+.additional-customer-info-modal {
+
+  .modal-details {
+    margin-bottom: 20px;
+  }
+
+  .control-label {
+    font-size: @typesize-minor;
+  }
+
+  .input {
+    backface-visibility: hidden;
+  }
+
+  .c-select-wrapper {
+
+    &:before {
+      background-image: url(../assets/icons/ic_chevron_soft_black_radius.svg);
+      transform: rotate(90deg);
+      background-size: 12px 12px;
+    }
+  }
+
+  #additionalCustomerInfoForm {
+    .help-block+.input-hint {
+      display: block;
+    }
+  }
+}

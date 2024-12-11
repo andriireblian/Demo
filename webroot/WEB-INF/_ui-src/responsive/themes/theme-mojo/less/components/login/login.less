@@ -1,0 +1,243 @@
+.page-login[data-sitename="mojo"],
+.page-login[data-sitename="mojoca"],
+.page-login-notification[data-sitename="mojo"],
+.page-login-notification[data-sitename="mojoca"],
+.page-checkout-login {
+  color: @color--white-background;
+
+  .login-mojo-container,
+  .register-mojo-container {
+    flex: 1 0 100%;
+    height: 100%;
+    padding-top: 60px;
+  }
+
+  .register-mojo-container {
+    padding-top: 80px;
+    @media (min-width: @tablet) {
+      padding-top: 105px;
+    }
+
+    #registrationFormHolder {
+      position: relative;
+
+      .c-select-wrapper:before {
+        background-image: url(../assets/icons/ic_chevron_soft_black_radius.svg);
+        transform: rotate(90deg);
+        background-size: 12px 12px;
+      }
+    }
+
+    .link-back {
+      position: absolute;
+      left: 0;
+      top: 15px;
+      cursor: pointer;
+      background: transparent;
+      border: 0;
+      @media (min-width: @tablet) {
+        border: 0;
+        left: -140px;
+        top: 6px;
+      }
+
+      &:hover{
+        text-decoration-color: currentColor;
+        text-underline-offset: .1em;
+        text-decoration: underline;
+      }
+
+    }
+  }
+
+  // TODO Temporary solution. It must be transferred to AEM repo
+
+  &.isRegister {
+    .mojo-nav__wrapper {
+      background-color: @color--indigo;
+    }
+  }
+
+  .mojo-nav__wrapper {
+    position: absolute !important;
+  }
+
+  .footer-underlay {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .main__inner-wrapper,
+  #mainPageContent {
+    height: 100%;
+  }
+
+  > footer .mojo-footer__legal-notification {
+
+    @media (min-width: @screen-md) {
+      border: 0;
+    }
+  }
+
+  // End TODO
+
+  #pearsonLoginForm .form-title {
+    display: none;
+  }
+
+  .bgcolor--indigo {
+    .input-hint {
+      color: @color--white-background;
+    }
+  }
+
+  .agree-message {
+    font-size: @typesize-minor-plus;
+  }
+
+  &.isRegister {
+    .help-block + .input-hint {
+      display: block;
+    }
+  }
+
+  .sign-in-holder {
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+
+  .agree-message,
+  .current-password,
+  .profile-institution-wrapper {
+    margin-bottom: 30px;
+  }
+
+  .profile-institution-wrapper .ui-menu-item {
+    padding: 2px 0;
+  }
+
+  .create-account-holder {
+
+    .recaptcha-container,
+    .button-container {
+      margin-top: 30px;
+    }
+
+    .grecaptcha-badge {
+      margin: 0 auto;
+    }
+  }
+
+  .form-text-holder {
+    display: flex;
+    justify-content: center;
+    font-family: @typefamily-alt;
+    font-size: @typesize-h6;
+    font-weight: bold;
+
+    .goto {
+      font-size: @typesize-h6;
+    }
+  }
+
+  .c-sectionHeader,
+  .recaptcha-container,
+  .form-title {
+    text-align: center;
+  }
+
+  .form-title {
+    margin-bottom: 30px;
+    padding: 0 45px;
+    @media (min-width: @tablet) {
+      padding: 0;
+    }
+  }
+
+  .flexAlign--horCenter {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .no-padding {
+    padding: 0;
+  }
+
+  .forgotten-username i {
+    font-style: normal;
+    color: @color--pink-link;
+  }
+
+  .pull-right {
+    float: right;
+  }
+
+  .main__inner-wrapper {
+    .container {
+      max-width: 481px;
+
+      @media (min-width: @tablet) and (max-width: @screen-md) {
+        max-width: 400px;
+      }
+    }
+  }
+
+  .input-holder {
+    position: relative;
+    .input {
+      padding-right: 40px;
+    }
+    .input-icon {
+      position: absolute;
+      top: 11px;
+      right: 13px;
+      cursor: pointer;
+      border: 0;
+    }
+  }
+
+  .icon-password {
+    width: 24px;
+    height: 24px;
+    background: url("../assets/icons/show-off-18.svg") no-repeat center;
+    &.on {
+      background: url("../assets/icons/show-on-18.svg") no-repeat center;
+    }
+  }
+
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid @color--plum-link-hover;
+    outline-offset: 2px;
+  }
+
+  .form-group.user-email {
+    display: flex;
+    flex-direction: column;
+
+    .checkbox {
+      order: 1;
+      margin-top: 10px;
+    }
+  }
+}
+
+.page-login-welcome[data-sitename="mojo"],
+.page-login-welcome[data-sitename="mojoca"],
+.page-login-notification[data-sitename="mojo"],
+.page-login-notification[data-sitename="mojoca"] {
+
+  .mojo-nav__wrapper,
+  .nav__wrapper {
+    background-color: @color--indigo;
+  }
+}
+
+.page-login-welcome[data-sitename="mojo"],
+.page-login-welcome[data-sitename="mojoca"] {
+  .mojo-nav__search,
+  .custom-header {
+    display: none;
+  }
+}

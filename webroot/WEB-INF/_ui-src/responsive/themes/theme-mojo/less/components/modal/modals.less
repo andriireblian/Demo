@@ -1,0 +1,304 @@
+/* ###############################################################################################
+   ###############################################################################################
+
+   Colorbox Core Style:
+   The following CSS is consistent between example themes and should not be altered.
+*/
+
+// ########################################################################################
+// Modal overlay
+#cboxOverlay {
+  width: 100%;
+  height: 100%;
+  background: @color--overlay;
+}
+
+
+// ########################################################################################
+// Override of inline styles
+#cboxWrapper,
+#cboxContent,
+#cboxMiddleRight {
+  width: auto !important; /* stylelint-disable-line */
+  height: auto !important; /* stylelint-disable-line */
+}
+
+
+// ########################################################################################
+// Overlay & modal positioning
+#colorbox,
+#cboxOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  -ms-overflow-style: none;
+  overflow: auto;
+}
+
+
+// ########################################################################################
+// Modal content wrapper styles
+#colorbox {
+  outline: none;
+  top: 50% !important; /* stylelint-disable-line */
+  left: 50% !important; /* stylelint-disable-line */
+  transform: translate( -50%, -50% );
+  height: auto !important; /* stylelint-disable-line */
+  border-radius: 8px;
+  max-height: 90vh;
+
+  &.isHidden { opacity: 0 !important; } /* stylelint-disable-line */
+
+  &.focus-first-interactive-element {
+
+    [class*="button-"] {
+      &:focus-visible {
+        outline: none;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  // setting global width to modal window
+  @media all and (max-width: (@tablet - 1)) { width: 345px !important; /* stylelint-disable-line */ }
+  @media all and (min-width: @tablet) and (max-width: @screen-md) { width: 492px !important; /* stylelint-disable-line */ }
+  @media all and (min-width: (@screen-md + 1)) { width: 570px !important; /* stylelint-disable-line */ }
+}
+
+// ########################################################################################
+// Content wrapper styles
+#cboxContent {
+  background-color: @color--chalk-white;
+}
+
+
+// ########################################################################################
+// Loaded content wrapper
+#cboxLoadedContent {
+  @media all and (max-width: (@tablet - 1)) { padding: 45px 30px 30px; }
+  @media all and (min-width: @tablet) { padding: 45px 45px 45px 45px; }
+
+  // reset margins
+  p:not(.input-hint) { margin: 0; }
+
+  p + p { margin: 20px 0 0 0; }
+
+  p + table { margin-top: 15px; }
+
+  td { padding: 0; }
+
+  tr:nth-child(n + 2) td { padding-top: 20px; }
+}
+
+
+// ########################################################################################
+// Modal close button styles
+#cboxClose {
+  position: absolute;
+  background-color: transparent;
+  background-image: url( "../assets/icons/icon-mobile-close.svg" );
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 14px;
+  height: 40px !important; /* stylelint-disable-line */
+  width: 40px;
+  top: 3px; // height of top border
+  right: 3px;
+  padding: 0;
+  border: none;
+  margin: 0;
+
+  &:hover {
+    background-color: @color--grey-85;
+  }
+}
+#cboxClose:active,
+#cboxClose:focus{
+  outline: auto;
+}
+
+// ########################################################################################
+// Modal title styles
+#cboxTitle {
+
+  .headline {
+    .h3();
+    margin: 0;
+    color: @color--indigo;
+
+    &.alignCenter {
+      text-align: center;
+    }
+  }
+}
+
+
+// ########################################################################################
+// Add margins to first element only in case that #cboxTitle is present
+#cboxTitle + * {
+  margin-top: 30px;
+}
+
+.c-modal__figure {
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.c-modal {
+  text-align: center;
+}
+
+.c-modal__button {
+  max-width: 290px;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: 0;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.focusable-element {
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.c-modal-actions {
+  margin-top: 30px;
+
+  [class^="col-xs-12"] + [class^="col-xs-12"],
+  [class^="col-12"] + [class^="col-12"] {
+    margin-top: 20px;
+  }
+
+  .row > *:nth-child(n+2) {
+    @media all and (max-width: (@tablet - 1)) {
+      margin-top: 20px;
+    }
+  }
+}
+
+.c-modal-title {
+  margin-bottom: 20px;
+}
+
+.c-modal-description-title {
+  color: @color--grey-text;
+
+  &.hasBorderBottom {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+#cboxContent {
+  .hasBorderBottom {
+    border-bottom: 1px solid @color--grey-75;
+  }
+
+  dl, dt, dd {
+    margin: 0 0 15px;
+  }
+}
+
+.order-total-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+
+  &.hasBorderBottom {
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+
+  &--align-right {
+
+    dt,dd {
+      width: 50%;
+    }
+
+    dt {
+      padding-right: 30px;
+    }
+
+    dd {
+      padding-left: 0px;
+      text-align: right;
+    }
+  }
+
+  dd,dt {
+    &.word-break-prop {
+      word-break: break-word;
+    }
+  }
+
+  dt {
+    width: 55%;
+  }
+
+  dd {
+    width: 45%;
+    padding-left: 20px;
+  }
+
+  &__info {
+    .h6();
+    color: @color--grey-text;
+  }
+}
+
+.confirmation-block-success {
+  text-align: center;
+
+  &__title--confirmation {
+    position: relative;
+    padding-top: 63px;
+
+    &:before {
+      content: '';
+      background-image: url('../assets/icons/checkmark-confirmation-pink.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @media all and (min-width: (@screen-xs - 1)) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .c-modal-description-title {
+    margin-top: 20px;
+
+    @media all and (min-width: (@screen-xs - 1)) {
+      margin-top: 30px;
+    }
+  }
+
+  .c-modal-actions {
+    margin: 20px 0 30px 0;
+  }
+}

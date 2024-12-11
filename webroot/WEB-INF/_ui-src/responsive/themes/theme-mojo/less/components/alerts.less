@@ -1,0 +1,202 @@
+.global-alerts {
+  width: 100%;
+  height: auto;
+  padding: 0 55px 20px;
+
+  @media (max-width: @tablet) {
+    padding: 0 22px 20px;
+  }
+
+  .js-global-alerts-container & {
+    position: relative;
+  }
+
+  .c-alert--inline {
+    max-width: 570px;
+    margin: auto;
+
+    @media all and (min-width: @tablet) and (max-width: @tablet-landscape) {
+      max-width: 466px;
+    }
+
+    .c-alert__close {
+      display: block;
+    }
+  }
+
+  .c-alert__content {
+    max-width: 100%;
+  }
+}
+.page-update-payment-method,
+.page-accountSubscriptionsLayout,
+.page-manageSubscriptionLayout,
+.page-forgottenPassword,
+.page-update-profile,
+.page-updateSubscriptionsPassword,
+.page-mojo-checkout,
+.page-redeemCodePage,
+.page-reviewOrderPage {
+  #mainPageContent > .global-alerts {
+    display: none;
+  }
+}
+
+.page-subscriptionProductLayout {
+  .main__inner-wrapper > .global-alerts {
+    display: none;
+  }
+
+  .pdp-header .global-alerts {
+    padding-bottom: 30px;
+
+    .c-alert--banner {
+      font-size: @typesize-default;
+      line-height: @leading--1-5;
+      padding: 15px 0;
+
+      .c-alert__content:before {
+        top: 3px;
+      }
+    }
+  }
+
+  .pdp-header > .global-alerts:nth-child(2) {
+    margin-top: -25px;
+  }
+}
+
+.page-update-profile,
+.page-subscriptionProductLayout,
+.page-manageSubscriptionLayout,
+.page-accountSubscriptionsLayout,
+.page-update-payment-method {
+  @media (max-width: @tablet) {
+    div.embeddedServiceHelpButton {
+      position: fixed;
+    }
+  }
+}
+
+.page-login,
+.page-checkout-login {
+  .login-mojo-container {
+    .global-alerts-container {
+      padding-top: 20px;
+    }
+  }
+
+  .register-mojo-container {
+    .global-alerts-container {
+      margin-top: -20px;
+    }
+  }
+
+  @media (max-width: @tablet) {
+    div.embeddedServiceHelpButton {
+      position: fixed;
+    }
+  }
+}
+
+.page-updateSubscriptionsPassword .reset-password > .global-alerts {
+  @media (min-width: @tablet) {
+    margin-top: -25px;
+  }
+}
+
+.page-mojo-checkout .checkout,
+.page-update-payment-method .top-section,
+.page-accountSubscriptionsLayout .top-section {
+  > .global-alerts {
+    margin-top: -10px;
+  }
+}
+
+.page-login .register-mojo-container,
+.page-checkout-login .register-mojo-container,
+.page-mojo-checkout,
+.page-reviewOrderPage,
+.page-orderConfirmationPage,
+.page-forgottenPassword,
+.page-updateSubscriptionsPassword {
+  .c-alert.c-alert--banner {
+    background-color: @color--indigo;
+  }
+
+  .c-alert.c-alert--banner p {
+    color: @color--white-tinted;
+  }
+
+  .c-alert--banner.c-alert--alert .c-alert__content::before {
+    background-image: url(../assets/icons/icon-alert-banner-dark--exclamation.svg);
+  }
+
+  .c-alert--banner.c-alert--info .c-alert__content::before {
+    background-image: url(../assets/icons/icon-alert-banner-dark--info.svg);
+  }
+
+  .c-alert--banner .c-alert__close {
+      background-image: url(../assets/icons/icon-alert-banner-close--white.svg);
+  }
+
+  .c-alert.c-alert--banner {
+    a:not([class*=button--]) {
+      color: @color--pink-link;
+    }
+  }
+}
+
+.c-alert {
+  &.isHiddenAlert {
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    max-height: 0;
+    padding: 0;
+    transition: opacity .2s ease-in-out, visibility .2s ease-in-out, max-height .2s .15s ease-in-out, padding .2s .15s ease-in-out;
+  }
+
+  &.alert-warning-message:not(.isHiddenAlert) {
+    background: @color--yellow-primary;
+    transition: background .4s ease-in-out, opacity .2s .15s ease-in-out,visibility .2s .15s ease-in-out, max-height .2s ease-in-out, padding .2s ease-in-out;
+    max-height: 500px;
+  }
+
+  &.alert-warning-animation:not(.isHiddenAlert) {
+    transition: background .4s ease-in-out;
+    background: @color--white-tinted;
+  }
+
+  &.alert-on-absolute {
+    top: 0;
+    position: absolute;
+    max-height: none;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+  }
+
+  + .alert-warning-message.isHiddenAlert {
+    max-height: none;
+    padding: 18px 0 15px;
+  }
+}
+
+.page-manageSubscriptionLayout, .page-accountSubscriptionsLayout {
+  .top-section > .js-global-alerts-container {
+    > .global-alerts {
+      padding-bottom: 30px;
+
+      .c-alert--banner {
+        font-size: @typesize-default;
+        line-height: @leading--1-5;
+        padding: 15px 0;
+
+        .c-alert__content:before {
+          top: 3px;
+        }
+      }
+    }
+  }
+}
