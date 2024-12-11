@@ -1,0 +1,9 @@
+{
+	"title": "Radio Buttons",
+	"status": "ready",
+	"tags": [ "hybris"],
+	"context": {
+		"themes": ["master", "learner", "mojo"],
+		"radio": "Radio button text"
+	}
+}

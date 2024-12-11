@@ -1,0 +1,20 @@
+{
+	"title": "Utility Colors",
+	"status": "ready",
+	"context": {
+		"colors": [
+			{ "name": "Pearson Blue Nav", "className": "bg--pearson-blue-i", "hexValue": "#007a9c" },
+			{ "name": "Pearson Blue link", "className": "bg--pearson-blue-aa", "hexValue": "#006f8f" },
+			{ "name": "Grey 15", "className": "bg--grey15", "hexValue": "#333333" },
+			{ "name": "Grey 20", "className": "bg--grey20", "hexValue": "#444444" },
+			{ "name": "Grey 30", "className": "bg--grey30", "hexValue": "#505759" },
+			{ "name": "Grey 75", "className": "bg--grey75", "hexValue": "#dbdbdb" },
+			{ "name": "Grey 85", "className": "bg--grey85", "hexValue": "#e6e6e6" },
+			{ "name": "Grey 95", "className": "bg--grey95", "hexValue": "#f5f5f5" },
+			{ "name": "Grey 100", "className": "bg--grey100", "hexValue": "#fafafa" },
+			{ "name": "Form Text Disabled", "className": "bg--formtextDisabled", "hexValue": "#666666" },
+			{ "name": "Form Border", "className": "bg--formBorder", "hexValue": "#cccccc" },
+			{ "name": "Grey 999", "className": "bg--grey999", "hexValue": "#999999" }
+		]
+	}
+}

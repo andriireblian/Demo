@@ -1,0 +1,43 @@
+<div>
+    <h2>Primary colors</h2>
+    {{#each primary-colors}}
+    <div class="colorBox">
+      <div class="color {{className}}"></div>
+      <div class="colorBox__name">{{name}}</div>
+      <div class="colorBox__hex">{{hexValue}}</div>
+    </div>
+    {{/each}}
+</div>
+<div>
+    <h2>State colors</h2>
+    {{#each state-colors}}
+        <div class="colorBox">
+            <div class="color {{className}}"></div>
+            <div class="colorBox__name">{{name}}</div>
+            <div class="colorBox__hex">{{hexValue}}</div>
+        </div>
+    {{/each}}
+</div>
+<div>
+    <h2>Accent colors</h2>
+    {{#each accent-colors}}
+        <h3>{{name}}</h3>
+        {{#each data}}
+            <div class="colorBox">
+                <div class="color {{className}}"></div>
+                <div class="colorBox__name">{{name}}</div>
+                <div class="colorBox__hex">{{hexValue}}</div>
+            </div>
+        {{/each}}
+    {{/each}}
+
+</div>
+<div>
+    <h2>Gradients</h2>
+    {{#each gradients}}
+        <div class="colorBox">
+            <div class="color {{className}}"></div>
+            <div class="colorBox__name">{{name}}</div>
+        </div>
+    {{/each}}
+</div>

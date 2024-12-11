@@ -1,0 +1,18 @@
+{
+	"title": "Select",
+	"status": "wip",
+	"context": {
+		"themes": ["master", "learner", "mojo","hed"],
+		"componentClass": ".c-select",
+		"select": {
+			"items": [
+				{ "text": "4-month access", "price":  "$129.99", "id": "option-1" },
+				{ "text": "4-month access + eText", "price":  "$168.94", "id": "option-2" },
+				{ "text": "4-month access + eText + loose-leaf", "price":  "$168.87", "id": "option-3" }
+			],
+			"defaultLabel": "Please select",
+      "skipNoneOption": false,
+      "id": ""
+		}
+	}
+}

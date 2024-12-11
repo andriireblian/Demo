@@ -1,0 +1,59 @@
+{
+	"title": "Mojo Colors",
+	"status": "ready",
+	"context": {
+		"primary-colors": [
+			{ "name": "Indigo", "className": "bgcolor--indigo", "hexValue": "#1c222e" },
+			{ "name": "Grey Dark", "className": "bgcolor--grey-dark", "hexValue": "#4f5561" },
+			{ "name": "Grey medium", "className": "bgcolor--grey-medium", "hexValue": "#9ba1ad" },
+			{ "name": "Grey light", "className": "bgcolor--grey-light", "hexValue": "#e8eefa" },
+			{ "name": "White tinted", "className": "bgcolor--white-tinted", "hexValue": "#f7f9fd" },
+			{ "name": "White background", "className": "bgcolor--white-background", "hexValue": "#fefefe" },
+			{ "name": "Grey text", "className": "bgcolor--grey-text", "hexValue": "#333" }
+
+		],
+		"state-colors": [
+			{"name": "Orange", "className": "bgcolor--orange-alert", "hexValue": "#f34a02"},
+			{"name": "Plum", "className": "bgcolor--plum-link", "hexValue": "#6d0176"},
+			{"name": "Purple", "className": "bgcolor--purple-link", "hexValue": "#623fc3"}
+		],
+		"accent-colors": [
+			{"name": "Pink", "data": [
+				{"name": "Dark", "className": "bgcolor--pink-dark", "hexValue": "#7e031a"},
+				{"name": "Medium", "className": "bgcolor--pink-medium", "hexValue": "#b00a4b"},
+				{"name": "Primary", "className": "bgcolor--pink-primary", "hexValue": "#e5067c"},
+				{"name": "Light", "className": "bgcolor--pink-light", "hexValue": "#ffa7d1"}
+			]},
+			{"name": "Yellow", "data": [
+				{"name": "Dark", "className": "bgcolor--yellow-dark", "hexValue": "#7f3500"},
+				{"name": "Medium", "className": "bgcolor--yellow-medium", "hexValue": "#9e4200"},
+				{"name": "Primary", "className": "bgcolor--yellow-primary", "hexValue": "#eea42e"},
+				{"name": "Light", "className": "bgcolor--yellow-light", "hexValue": "#f4d97b"}
+			]},
+			{"name": "Teal", "data": [
+				{"name": "Dark", "className": "bgcolor--teal-dark", "hexValue": "#00655b"},
+				{"name": "Medium", "className": "bgcolor--teal-medium", "hexValue": "#00796d"},
+				{"name": "Primary", "className": "bgcolor--teal-primary", "hexValue": "#01cbb7"},
+				{"name": "Light", "className": "bgcolor--teal-light", "hexValue": "#8ef8ee"}
+			]},
+			{"name": "Blue", "data": [
+				{"name": "Dark", "className": "bgcolor--blue-dark", "hexValue": "#005f79"},
+				{"name": "Medium", "className": "bgcolor--blue-medium", "hexValue": "#007899"},
+				{"name": "Primary", "className": "bgcolor--blue-primary", "hexValue": "#31d0fd"},
+				{"name": "Light", "className": "bgcolor--blue-light", "hexValue": "#a1ebff"}
+			]},
+			{"name": "Purple", "data": [
+				{"name": "Dark", "className": "bgcolor--purple-dark", "hexValue": "#4f2cb0"},
+				{"name": "Medium", "className": "bgcolor--purple-medium", "hexValue": "#623fc3"},
+				{"name": "Primary", "className": "bgcolor--purple-primary", "hexValue": "#ae90ff"},
+				{"name": "Light", "className": "bgcolor--purple-light", "hexValue": "#dbceff"}
+			]}
+		],
+		"gradients": [
+			{"name": "Pink", "className": "gradient-bg--pink"},
+			{"name": "Teal", "className": "gradient-bg--teal"},
+			{"name": "Blue", "className": "gradient-bg--blue"}
+		]
+
+	}
+}

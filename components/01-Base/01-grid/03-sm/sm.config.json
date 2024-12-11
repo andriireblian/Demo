@@ -1,0 +1,8 @@
+{
+	"title": "Bootstrap Grid - Small",
+	"status": "ready",
+	"context": {
+		"themes": ["master", "learner", "mojo"],
+		"componentClass": ".container"
+	}
+}

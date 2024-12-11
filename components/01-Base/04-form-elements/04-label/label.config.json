@@ -1,0 +1,9 @@
+{
+	"title": "Label",
+	"status": "wip",
+	"context": {
+		"label": "Simple label",
+		"themes": ["master", "learner", "mojo", "hed"],
+		"componentClass": "label"
+	}
+}

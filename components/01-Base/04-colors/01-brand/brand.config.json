@@ -1,0 +1,27 @@
+{
+	"title": "Brand Colors",
+	"status": "ready",
+	"context": {
+		"colors": [
+			{ "name": "Ink Black", "className": "bg--ink-black", "hexValue": "#000000" },
+			{ "name": "Soft Black", "className": "bg--soft-black", "hexValue": "#151515" },
+			{ "name": "Chalk White", "className": "bg--chalk-white", "hexValue": "#ffffff" },
+			{ "name": "Pearson Blue", "className": "bg--pearson-blue", "hexValue": "#007fa3" },
+			{ "name": "Midnight Blue", "className": "bg--midnight-blue", "hexValue": "#003057" },
+			{ "name": "Ice Blue", "className": "bg--ice-blue", "hexValue": "#d4eae4" },
+			{ "name": "Graphite Gray", "className": "bg--graphite-grey", "hexValue": "#505759" },
+			{ "name": "Lime Green", "className": "bg--lime-green", "hexValue": "#d2db0e" },
+			{ "name": "Ink Blue", "className": "bg--ink-blue", "hexValue": "#005a70" },
+			{ "name": "Grass Green", "className": "bg--grass-green", "hexValue": "#008638" },
+			{ "name": "Sunshine Yellow", "className": "bg--sunshine-yellow", "hexValue": "#ffb81c" },
+			{ "name": "Strawberry Red", "className": "bg--strawberry-red", "hexValue": "#db0020" },
+			{ "name": "Royal Purple", "className": "bg--royal-purple", "hexValue": "#AE367E" },
+			{ "name": "Purple plum", "className": "bg--purple-plum", "hexValue": "#722362" },
+			{ "name": "Sky blue", "className": "bg--sky-blue", "hexValue": "#76D5D4" },
+			{ "name": "Hot pink", "className": "bg--hot-pink", "hexValue": "#E5067C" },
+			{ "name": "Juicy orange", "className": "bg--juicy-orange", "hexValue": "#ff8a00" },
+			{ "name": "Fresh green", "className": "bg--fresh-green", "hexValue": "#a4c20f" },
+			{ "name": "Marine turquoise", "className": "bg--marine-turquoise", "hexValue": "#12b2a6" }
+		]
+	}
+}

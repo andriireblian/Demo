@@ -1,0 +1,9 @@
+{
+	"title": "Radio Buttons / Boxed",
+	"status": "ready",
+	"tags": [ "hybris"],
+	"context": {
+		"themes": ["master", "learner", "mojo", "hed"],
+		"radio": "Radio button text"
+	}
+}

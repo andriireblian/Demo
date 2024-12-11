@@ -1,0 +1,7 @@
+{
+	"title": "Tables",
+	"status": "wip",
+	"context": {
+		"themes": ["master", "learner", "mojo", "hed"]
+	}
+}

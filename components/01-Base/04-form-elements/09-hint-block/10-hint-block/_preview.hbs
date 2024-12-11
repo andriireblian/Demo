@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="{{ path '/js/jquery-3.6.0.min.js' }}"></script>
+      <link media="all" rel="stylesheet" href="{{ path '/css/theme-master.css' }}">
+      <link media="all" rel="stylesheet" href="{{ path '/css/components.css' }}">
+      <title>Tabs Component</title>
+  </head>
+  {{!-- needed for theming --}}
+  <body class="has-padding--15" data-themes="{{_target.context.themes}}" data-component-class="{{_target.context.componentClass}}">
+  {{!-- needed for theming --}}
+
+    {{!-- {{#each _target}}
+      {{@key}}: {{this}} <br>
+    {{/each}} --}}
+
+    {{{ yield }}}
+
+    {{!-- needed for theming --}}
+    <script src="{{ path '/js/theming.js' }}"></script>
+    {{!-- needed for theming --}}
+  </body>
+</html>
